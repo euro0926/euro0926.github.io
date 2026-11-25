@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Light Studies — Personal Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">LIGHT STUDIES</div>
+    <div class="subbrand">ALGORITHMIC PHOTO PORTFOLIO</div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <h1>Light Studies</h1>
+        <p class="subtitle">
+          Personal photography portfolio with interactive <strong>Merge Sort</strong> ordering by date or title.
+        </p>
+      </div>
+
+      <div class="controls" role="group" aria-label="Sort gallery">
+        <span class="sort-label">Sort by</span>
+        <button id="newest-btn" class="btn active" type="button">Newest</button>
+        <button id="title-btn" class="btn" type="button">Title A-Z</button>
+      </div>
+    </section>
+
+    <section id="gallery" class="gallery-grid"></section>
+
+    <section class="trace-box">
+      <h2>Merge Sort Trace</h2>
+      <p id="sort-status" class="status-text">Sorted by Newest using mergeSort()</p>
+      <pre id="sort-order" class="order-box"></pre>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
